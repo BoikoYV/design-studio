@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box; }
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0; }
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+button {
+  border: none;
+  font-size: inherit;
+  font-family: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: #5b6469;
+  font-weight: 600;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 21px; }
+
+html {
+  height: 100%; }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.title {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.sm-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #353a3d; }
+
+.header__wrapper {
+  background: #313131;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+.header__logo {
+  display: flex;
+  padding-left: 30px; }
+  .header__logo-text {
+    margin-left: 28px; }
+.header__logo-text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px; }
+.header__menu-list {
+  display: flex; }
+.header__menu-item + .header__menu-item {
+  padding-left: 35px; }
+.header__link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: 0.3s; }
+  .header__link:hover {
+    color: #14b9d5; }
+.header__search {
+  width: 70px;
+  height: 70px;
+  background-color: #000;
+  background-image: url("../img/search.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer; }
+
+.f-scr__wrapper {
+  background-image: url("../img/header-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+.f-scr__inner {
+  text-align: center;
+  padding-top: 163px;
+  padding-bottom: 74px; }
+.f-scr__title {
+  color: #fff; }
+.f-scr__buttons {
+  margin-top: 44px; }
+.f-scr .subscribe-btn {
+  padding: 16px 19px 17px;
+  background-color: #89ca62;
+  margin-right: 20px; }
+.f-scr .readmore-btn {
+  padding: 16px 30px 17px;
+  background-color: #14b9d5; }
+.f-scr__btn {
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 5px;
+  display: inline-block;
+  border: 3px solid transparent;
+  transition: all 0.3s; }
+  .f-scr__btn:hover {
+    background-color: #fff;
+    border: 3px solid #14b9d5;
+    color: #14b9d5; }
+
+.posts__wrapper {
+  background-color: #f2f2f2; }
+.posts__inner {
+  padding-top: 50px;
+  padding-bottom: 72px;
+  text-align: center; }
+.posts__main-title {
+  color: #18b4cf; }
+.posts__title {
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center; }
+.posts__catalog {
+  margin-top: 52px; }
+.posts__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 825px;
+  justify-content: flex-start;
+  align-content: space-between; }
+.posts__item {
+  max-width: 370px; }
+  .posts__item:nth-child(odd) {
+    margin-bottom: 25px; }
+.posts__img {
+  display: block; }
+
+.clients__wrapper {
+  background-image: url("../img/clients-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+.clients__inner {
+  padding-top: 108px;
+  padding-bottom: 183px;
+  text-align: center; }
+.clients__title {
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin-bottom: 190px; }
+.clients__item {
+  margin: 0;
+  padding: 0; }
+.clients__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 50px;
+  align-items: center; }
+
+.rate__inner {
+  padding-top: 51px; }
+.rate__title {
+  padding-bottom: 52px;
+  color: #18b4cf; }
+.rate__gallery {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column; }
+.rate__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+.rate .slideBtn {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  display: block;
+  background-color: #18b4cf;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 40px auto;
+  transition: 0.3s; }
+.rate .slideBtn:hover {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #14b9d5; }
+
+.news__inner {
+  padding-top: 48px;
+  padding-bottom: 71px; }
+.news__list {
+  display: grid;
+  grid-template-columns: 277px auto auto 277px;
+  grid-template-rows: 259px 418px 418px 259px;
+  grid-template-areas: "emirate   emirate   emirate   spain" "egypt     egypt     maldives  maldives" "tenerife  tenerife  britain   britain" "ireland   spain2    spain2    spain2";
+  column-gap: 35px;
+  row-gap: 42px; }
+.news__item:nth-child(1) {
+  grid-area: emirate; }
+.news__item:nth-child(2) {
+  grid-area: spain; }
+.news__item:nth-child(3) {
+  grid-area: egypt; }
+.news__item:nth-child(4) {
+  grid-area: maldives;
+  justify-self: self-end; }
+.news__item:nth-child(5) {
+  grid-area: tenerife; }
+.news__item:nth-child(6) {
+  grid-area: britain;
+  justify-self: self-end; }
+.news__item:nth-child(7) {
+  grid-area: ireland; }
+.news__item:nth-child(8) {
+  grid-area: spain2; }
+.news__item img {
+  display: block; }
+.news__item:nth-child(1), .news__item:nth-child(8) {
+  display: flex; }
+.news__main-title {
+  padding-bottom: 50px;
+  color: #18b4cf; }
+.news .text-block {
+  background: #f2f2f2; }
+.news .text-block-1,
+.news .text-block-8 {
+  width: 374px;
+  padding: 40px 24px 40px 10px; }
+.news .text-block-2 {
+  width: 277px;
+  padding: 11px 27px;
+  text-align: center; }
+.news .text-block-3,
+.news .text-block-4,
+.news .text-block-5,
+.news .text-block-6 {
+  width: 554px;
+  padding: 12px 14px 5px; }
+.news .text-block-7 {
+  width: 277px;
+  padding: 5px 26px 20px;
+  text-align: center; }
+.news__title {
+  text-align: right; }
+.news__text {
+  text-align: right;
+  padding-top: 15px; }
+
+.footer {
+  background-color: #000;
+  padding: 28px 0; }
+  .footer__copy {
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px; }
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-content: center; }
+
+.js-btn {
+  opacity: 0; }
+
+.scrollBtn {
+  position: fixed;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  right: 50px;
+  bottom: 100px;
+  background-color: transparent;
+  background-image: url("../img/up-arrow.svg");
+  background-repeat: no-repeat;
+  display: none;
+  cursor: pointer;
+  transition: 0.3s; }
+
+.scrollBtn:hover {
+  background-image: url("../img/up-arrow-hover.svg"); }
+
+/*# sourceMappingURL=styles.css.map */
